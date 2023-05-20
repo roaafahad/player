@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% extends 'main.html' %}
+{% block content %}
+
+<html lang="en">
+<head>
+    <style>
+        input[type=text],
+        select,
+        textarea {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        label {
+            font-family: "Sakkal Majalla";
+            font-size: x-large;
+            color: #304352;
+        }
+
+        .ima {
+            background-color: #304352;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .ima:hover {
+            background-color: #283B4A;
+        }
+
+        .ima:active {
+            background-color: #1F2A35;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color:#304352; font-family: 'Sakkal Majalla'; font-size: xxx-large;">Contact Us</h2>
+        <form id="contact-form" name="contact-form" action="{% url 'contact' %}" method="POST">
+
+            {% csrf_token %}
+            <!-- given Coss site request -->
+
+            <label>Your Name</label>
+            <br>
+            <input type="text" id="name" name="name">
+            <br>
+            <label>Your Email</label>
+            <br>
+            <input type="text" id="email" name="email">
+            <br>
+            <label>The Subject</label>
+            <br>
+            <input type="text" id="subject" name="subject">
+            <br>
+            <label>Your Message</label>
+            <br>
+            <textarea type="text" id="message" name="message" rows="2"></textarea>
+            <br>
+            <button class="ima" onclick="document.getElementById('contact-form').submit()">Send</button>
+        </form>
+    </div>
+</body></html>
+<!-- Sign up for a Team -->
+<section class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <div class="post-block">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex mb-3">
+                            <div>
+                                <img src="img/football-team.jpg" alt="Football Team" class="post-block__content img">
+                                <h5 class="mb-0"><a class="text-dark">Sign up for a Team</a></h5>
+                                <div class="mb-1 text-muted">May 18, 2023</div>
+                                <p>Are you passionate about sports? Join a team and experience the thrill of competition, teamwork, and personal growth. Whether it's soccer, basketball, baseball, or any other sport, being part of a team can provide valuable opportunities for skill development and building lifelong friendships. Don't miss out on the chance to be part of something special. Sign up for a team today and unleash your potential!</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/basketball-team.jpg" alt="Basketball Team" class="post-block__content img">
+                            <h5 class="mb-0"><a class="text-dark">Join a Basketball Team</a></h5>
+                            <div class="mb-1 text-muted">May 18, 2023</div>
+                            <p>Basketball is a fast-paced and exciting sport that offers opportunities for players of all ages and skill levels. Whether you're a beginner or an experienced player, joining a basketball team can help you improve your skills, enhance your fitness, and enjoy the camaraderie of fellow players. Take your love for basketball to the next level by joining a team and experiencing the joy of the game in a competitive setting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

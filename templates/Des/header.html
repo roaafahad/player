@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<title>ALETRY</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+
+		<style>@import url(min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+*/ footer, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	-ms-overflow-style: scrollbar;
+}
+@media screen and (max-width: 480px) {
+	html, body {
+		min-width: 320px;
+	}
+}
+body {
+	background: #000e58;
+	background: -webkit-linear-gradient(to right, #ffffff, #000e58);
+	background: linear-gradient(to right, #ffffff, #000e58);
+}
+@media screen and (max-width: 1680px) {}
+@media screen and (max-width: 980px) {}
+@media screen and (max-width: 736px) {}
+.logo {
+	width: 3em;
+}
+@media screen and (max-width: 1680px) {}
+@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 980px) {}
+@media screen and (max-width: 763px) {}
+@media screen and (max-width: 480px) {}
+/* Wrapper */
+
+#wrapper {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: row-reverse;
+	-webkit-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+	min-height: 35vh;
+}
+/* Main */
+
+#main {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	-moz-flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+	width: 100%;
+}
+#main>.inner {
+	padding: 0 3em 0.1em 6em;
+	margin: 0 auto;
+	max-width: 110em;
+}
+#main>.inner>section {
+	padding: 3em 0 4em 0;
+	border-top: solid 2px rgba(210, 215, 217, 0.75);
+}
+#main>.inner>section:first-of-type {
+	border-top: 0 !important;
+}
+@media screen and (max-width: 1680px) {
+	#main>.inner {
+		padding: 0 5em 0.1em 5em;
+	}
+	#main>.inner>section {
+		padding: 5em 0 3em 0;
+	}
+}
+@media screen and (max-width: 1280px) {
+	#main>.inner {
+		padding: 0 4em 0.1em 4em;
+	}
+	#main>.inner>section {
+		padding: 4em 0 2em 0;
+	}
+}
+@media screen and (max-width: 736px) {
+	#main>.inner {
+		padding: 0 2em 0.1em 2em;
+	}
+	#main>.inner>section {
+		padding: 3em 0 1em 0;
+	}
+}
+/* Header */
+
+#header {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	border-bottom: solid 2px #fcfcf7;
+	padding: 3em 0 1em 0;
+	position: relative;
+}
+#header>* {
+	-moz-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin-bottom: 0;
+}
+#header .icons {
+	text-align: center;
+}
+@media screen and (max-width: 150px) {
+	#header {
+		padding-top: 5em;
+	}
+}
+@media screen and (max-width: 700px) {
+	#header {
+		padding-top: 3em;
+	}
+	#header .icons {
+		height: 2em;
+		line-height: 2em;
+		position: absolute;
+		right: -0.5em;
+		top: 0;
+	}
+}
+/* Banner */
+
+#banner {
+	padding: 3em 0 3em 0;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
+#banner h1 {
+	margin-top: -0.125em;
+}
+#banner .content {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	-moz-flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+	width: 50%;
+}
+#banner .image {
+	-moz-flex-grow: 0;
+	-webkit-flex-grow: 0;
+	-ms-flex-grow: 0;
+	flex-grow: 0;
+	-moz-flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-shrink: 0;
+	flex-shrink: 0;
+	display: block;
+	margin: 0 0 2em 4em;
+	width: 50%;
+}
+#banner .image img {
+	height: 100%;
+	-moz-object-fit: cover;
+	-webkit-object-fit: cover;
+	-ms-object-fit: cover;
+	object-fit: cover;
+	-moz-object-position: center;
+	-webkit-object-position: center;
+	-ms-object-position: center;
+	object-position: center;
+	width: 100%;
+}
+@media screen and (orientation: portrait) {
+	#banner {
+		-moz-flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+	#banner h1 br {
+		display: none;
+	}
+	#banner .content {
+		-moz-flex-grow: 0;
+		-webkit-flex-grow: 0;
+		-ms-flex-grow: 0;
+		flex-grow: 0;
+		-moz-flex-shrink: 0;
+		-webkit-flex-shrink: 0;
+		-ms-flex-shrink: 0;
+		flex-shrink: 0;
+		width: 100%;
+	}
+	#banner .image {
+		-moz-flex-grow: 0;
+		-webkit-flex-grow: 0;
+		-ms-flex-grow: 0;
+		flex-grow: 0;
+		-moz-flex-shrink: 0;
+		-webkit-flex-shrink: 0;
+		-ms-flex-shrink: 0;
+		flex-shrink: 0;
+		margin: 0 0 4em 0;
+		height: 25em;
+		max-height: 50vh;
+		min-height: 18em;
+		width: 100%;
+	}
+}
+@media screen and (orientation: portrait) and (max-width: 480px) {
+	#banner .image {
+		max-height: 35vh;
+	}
+}
+nav li {
+	display: inline;
+	padding-right: 35px;
+}
+nav li a {
+	color: rgba(255, 253, 253, 0.78);
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+nav li a:hover {
+	color: #c3e186;
+}
+nav ul {
+	margin: 0px;
+}
+</style>
+	</head>
+	<body class="is-preload">
+
+	<div id="wrapper">
+		<div id="main">
+			<div class="inner">
+				<header id="header">
+					<div style="font-size:35px; font-family: 'Sakkal Majalla'; ">
+  <nav>
+	  <ul>
+		  <img class="logo" src="https://i.postimg.cc/ZnVLRDSR/th-removebg-preview.png" />
+		    &nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp
+		  <li><a href="{% url 'home'%}">Home</a></li>
+		  <li><a href="{% url 'blog'%}">Blog</a></li>
+		  <li><a href="{% url 'about'%}">About Us</a></li>
+		  <li><a href="{% url 'contact'%}">Contact Us</a></li>
+	  <a role="button" data-bs-toggle="dropdown" > Gallery</a>
+      <ul class="dropdown-menu"aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item " href="{% url 'pro'%}"> players </a> </li>
+      </ul>
+	  </ul>
+  </nav>
+					</div>
+				</header>
+			</div>
+		</div>
+	</div>
+		</div>
+		</div>
+
+	</body>
+</html>

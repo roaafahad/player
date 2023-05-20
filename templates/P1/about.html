@@ -1,0 +1,109 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Sakkal Majalla";
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 20px;
+            text-align: center;
+            background: #000000;
+            /* fallback for old browsers /
+background: -webkit-linear-gradient(to right, #434343, #000000); / Chrome 10-25, Safari 5.1-6 /
+background: linear-gradient(to right, #434343, #000000); / W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: #2c5e5e;
+            width: 50%;
+            font-size: x-large;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            text-align: center;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="about-section">
+            <h2 style="color:#ffffff;">About us</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            &nbsp
+                            <h2>Saly Sport</h2>
+                            <img style="width: 5em;" class="logo" src="https://i.postimg.cc/ZnVLRDSR/th-removebg-preview.png" />
+                            <br><br>
+                            <p class="title">Football Fans</p>
+                            <p>Our passion is capturing the best moments in sports through photography.</p>
+                            <p>At Saly Sport, we strive to provide you with the most captivating and high-quality images of athletes in action.</p>
+                            <p>With years of experience in sports photography, we have developed a keen eye for capturing the essence of the game and the emotions of the players.</p>
+                            <p>Contact us at saly292999@gmail.com to get access to our stunning collection of sports photographs.</p>
+                        
+								<p>FC Barcelona, based in Barcelona, Spain, is one of the most successful and iconic soccer clubs in the world. Known for its distinctive style of play, called "tiki-taka," Barcelona has produced legendary players and achieved numerous domestic and international titles. The club's commitment to nurturing homegrown talent and its rich history make it a powerhouse in the world of soccer.</p>
+							</div>
+						</div>
+						<div>
+							<img src="img/real-madrid.jpg" alt="Real Madrid" class="post-block__content img">
+							<h5 class="mb-0"><a class="text-dark">Real Madrid - Soccer</a></h5>
+							<div class="mb-1 text-muted">May 18, 2023</div>
+							<p>Real Madrid, based in Madrid, Spain, is one of the most successful and prestigious soccer clubs in the world. With a storied history and a record number of UEFA Champions League titles, Real Madrid has consistently attracted top talent and maintained a winning tradition. The club's iconic white jersey and its passionate fanbase have made it a symbol of excellence in the world of soccer.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

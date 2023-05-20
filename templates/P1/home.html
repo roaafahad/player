@@ -1,0 +1,50 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% block content %}
+
+<html>
+<style>
+    h3 {
+        padding: 0 3em 0.1em 3em;
+        font-family: "Sakkal Majalla";
+        font-size: 40px;
+        color: #000000;
+    }
+</style>
+
+<body>
+    <div>
+      
+        <h3 class="col-sm-8 offset-sm-2">Our goal :<br> I will give you the best picture of the players</h3>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+</body></html>
+<!-- Best Players in Sports -->
+<section class="main-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 offset-sm-2">
+				<div class="post-block">
+					<div class="d-flex justify-content-between">
+						<div class="d-flex mb-3">
+							<div>
+								<img src="img/messi.jpg" alt="Lionel Messi" class="post-block__content img">
+								<h5 class="mb-0"><a class="text-dark">Lionel Messi - Soccer</a></h5>
+								<div class="mb-1 text-muted">May 18, 2023</div>
+								<p>Lionel Messi, often regarded as one of the greatest soccer players of all time, has mesmerized fans with his exceptional skill, agility, and goal-scoring prowess. With numerous accolades and records to his name, Messi's ability to control the ball and create magical moments on the field has made him an icon in the world of soccer.</p>
+							</div>
+						</div>
+						<div>
+							<img src="img/lebron.jpg" alt="LeBron James" class="post-block__content img">
+							<h5 class="mb-0"><a class="text-dark">LeBron James - Basketball</a></h5>
+							<div class="mb-1 text-muted">May 18, 2023</div>
+							<p>LeBron James, known for his incredible athleticism and versatility, has solidified his place among the greatest basketball players of all time. With his remarkable court vision, scoring ability, and leadership skills, James has consistently dominated the game and led his teams to championships. His impact on and off the court has made him an inspiration for aspiring basketball players worldwide.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
